@@ -1,0 +1,3 @@
+playwright>=1.48
+selectolax>=1.0  # 用 lexbor 後端（舊的 modest 後端在 1.0 已移除）
+pytest>=8

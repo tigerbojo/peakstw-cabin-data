@@ -1,0 +1,74 @@
+# 每小時抓一次玉山宿營地床位，結果推到 data 分支（只留最新一份，不累積歷史）。
+# PEAKSTW 官網讀 https://raw.githubusercontent.com/tigerbojo/peakstw-cabin-data/data/yushan.json
+name: 抓床位
+
+on:
+  schedule:
+    # 台北 07:17～22:17 每小時一次（= UTC 23:17、00:17～14:17）。避開整點尖峰，也避開官網夜間維護。
+    - cron: "17 23,0-14 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "維護時段（23:00–07:00）也照抓"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write # 只為了推 data 分支
+
+concurrency:
+  group: scrape # 同一時間只跑一輪，前一輪還沒跑完就排隊，不會兩輪同時打官網
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 快取 Playwright 瀏覽器
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - run: python -m playwright install --with-deps chromium
+
+      - name: 拿上一份資料（合併用：這輪失敗的山屋要保留舊資料）
+        run: |
+          mkdir -p data
+          if git fetch --depth=1 origin data 2>/dev/null; then
+            git show origin/data:state.json > data/state.json
+          else
+            echo "第一次跑，還沒有舊資料"
+          fi
+
+      - name: 抓一輪
+        id: scrape
+        continue-on-error: true # 全部失敗也要把「失敗時間、原因」推上去，網站才知道
+        run: python scraper.py --state data/state.json --out data/yushan.json ${{ inputs.force && '--force' || '' }}
+
+      - name: 推到 data 分支
+        if: always() && hashFiles('data/yushan.json') != ''
+        working-directory: data
+        run: |
+          git init -q -b data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state.json yushan.json
+          git commit -q -m "data: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
+
+      - name: 這輪全部失敗就標紅
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::error::這輪一處都沒抓成功（舊資料已保留）。看上面「抓一輪」的紀錄。"
+          exit 1

@@ -1,0 +1,943 @@
+<!DOCTYPE html><html class=""><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣登山申請一站式服務網</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="favicon.ico">
+
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- css Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- css bootstrap datetimepicker -->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+    <!-- css bootstrap multiselect -->
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css">
+
+    <!-- css system style -->
+    <link rel="stylesheet" href="css/web_style.css">
+    <link href="./css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- js jQuery -->
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <!-- js Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <!-- bootstrap datetimepicker -->
+    <script src="js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datetimepicker.zh-TW.js" type="text/javascript"></script>
+
+    <!-- bootstrap multiselect -->
+    <script src="js/bootstrap-multiselect.min.js" type="text/javascript"></script>
+
+    <!-- js system js -->
+    <script src="js/system.js" type="text/javascript"></script>
+    <script src="js/HSTS/shares.js" type="text/javascript"></script>
+
+    <!-- js fancybox js -->
+    <script type="text/javascript" src="js/source/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css?v=2.1.5" media="screen">
+    <script src="js/jquery.blockUI.js"></script>
+    <link type="text/css" href="js/Plugin/sweetalert.css" rel="stylesheet">
+    <script type="text/javascript" src="js/Plugin/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/HSTS/Swal.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-CETW.js"></script>
+    <script src="js/language.js"></script>
+    <link rel="stylesheet" href="js/Plugin/Chosen/chosen.css">
+    <script src="js/Plugin/Chosen/chosen.jquery.min.js"></script>
+
+
+    <script src="js/jimmy.js?i=20261021232911"></script>
+    <script>       
+        function NotWorking() {
+            ShowSwal(-1, "", "功能調整中");
+        }
+    </script>
+    
+    <script type="text/javascript" src="js/source/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css?v=2.1.5" media="screen">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init();
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+
+            function EndRequestHandler(sender, args) {
+                init();
+            }
+        });
+
+        function init() {
+            $('.fancybox').fancybox({  //鎖定位置不移動最上面
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                }
+            });
+        }
+    </script>
+
+    
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body>
+    <form method="post" action="./bed_6.aspx" id="form1" autocomplete="off">
+<div class="aspNetHidden">
+
+
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=T6Nh5aykfJHQx6c4fqve2vpkJu4h6jkHshXTKbP8hQPUpTjmq_IdV7U3U0RytaWrVeFFW8bvbJpPAUTxOrAG2_kj5NBlN6sd-qTGDmFiP6Y1&amp;t=639191132600000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=JHtumTjcVH5oeGZqPMmj13wJ-Jlw6SEy2Hiy5HGT4RiBleWIj1W0tWrwlu1qViioWKTuw9k44n35hdiHrufJ2GRZivnVRJX9yoxBwi_r9i77_Bwo9DzAW9WkIJtN0xNilFiT3GvQKVQRwOgp9FeeUA2&amp;t=7f16157c" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 用戶端架構無法載入。');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=pT2Qz_rtrcmcHYrldUtXYAC8Cok_aynqiXYPrmIbdmaDKLVt9d_8ex80PmRWxMvZKbkxuPqYqQsU45awQmw6-UIRoTqQYtThsUZ8ICrm-eiXMgE01FapBLEwE5oRyVTztjYFm6-6oDc4PsK4xYuHpQ2&amp;t=7f16157c" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	
+	
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['fctl00$con$UpdatePanel2','con_UpdatePanel2'], ['ctl00$con$btnsearch','con_btnsearch'], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div class="sys_header">
+            <div class="dropdown dropleft pull-right mt-3 mr-1 ml-4">
+                <div class="pull-left mr-2" style="margin-top: -0.2em;">
+                    <div class="input-group input-group-sm" style="z-index: 2;">
+                        <input name="ctl00$googletxt" type="text" id="googletxt" class="form-control" placeholder="全站搜尋">
+                        <div class="input-group-append">
+                            <a id="btngoogle" class="btn btn-secondary" href="javascript:__doPostBack('ctl00$btngoogle','')"><i class="fas fa-search"></i>查詢</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="./en/web_index.aspx" class="text-white-50">【EN】</a>
+                <a href="./jp/web_index.aspx" class="text-white-50">【日本語】</a>
+            </div>
+            <div class="main_menu_box  con_web_bg">
+                <a href="#" id="pull" class="btn btn-sm btn-light"><i class="fas fa-bars"></i></a>
+                <div class="main_menu" style="">
+                    <div class="menu_group sys_logo_btn">
+                        <a class="m_menu_btn sys_logo" title="臺灣登山申請一站式服務網" href="web_index.aspx">臺灣登山申請一站式服務網</a>
+                    </div>                    
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink3" tabindex="7" title="公布欄" href="#">公布欄</a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink4" tabindex="8" title="最新消息" href="news_0.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;最新消息</a>
+                            <a id="con_HyperLink5" tabindex="9" title="違規名單" href="news_5.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;違規名單</a>
+                            <a id="con_HyperLink6" tabindex="10" title="檔案下載" href="news_6.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;檔案下載</a>
+                            <a id="con_HyperLink7" tabindex="11" title="常見問答" href="news_7.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;常見問答</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink24" tabindex="28" title="登山申請" href="#"><b>登山申請</b></a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink25" tabindex="29" title="各項線上申請" href="apply_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;各項線上申請</a>
+                            <a id="con_HyperLinkSearch" tabindex="200" title="申請進度查詢/繳費/異動/取消" href="applySearch.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;申請進度查詢/繳費/異動/取消</a>
+                            
+                            
+                            <a id="A6" tabindex="30" title="草稿編輯" href="apply_2_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;草稿編輯</a>
+                            
+                            
+                            <a id="A8" tabindex="32" title="國家公園出園回報" href="apply_6.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;國家公園出園回報</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink8" tabindex="12" title="登山須知" href="notice.aspx">登山須知</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink14" tabindex="18" title="登山路線開放狀態" href="open.aspx">登山路線開放狀態</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn active" id="con_HyperLink15" tabindex="19" title="宿營地與床位查詢" href="#">宿營地與床位查詢</a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink32" tabindex="20" title="林業及自然保育署宿營地查詢" href="bed_0.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;林業及自然保育署宿營地查詢</a>
+                            <a id="con_HyperLink29" tabindex="20" title="太魯閣山屋查詢" href="bed_4.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;太魯閣山屋查詢</a>
+                            <a id="con_HyperLink30" tabindex="20" title="太魯閣路線查詢" href="bed_5.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;太魯閣路線查詢</a>
+                            <a id="con_HyperLink16" tabindex="20" title="雪霸宿營地查詢" href="bed_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;雪霸宿營地查詢</a>
+                            <a id="con_HyperLink17" tabindex="20" title="雪霸路線查詢" href="bed_10.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;雪霸路線查詢</a>
+                            <a id="con_hlBed_6" tabindex="20" title="玉山宿營地查詢" href="bed_6.aspx" class="active"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山宿營地查詢</a>
+                            <a id="A5" tabindex="20" title="玉山單日往返路線查詢" href="bed_7.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山單日往返路線查詢</a>
+                            <a id="con_hlBed_3" tabindex="22" title="玉山抽籤結果查詢" href="bed_3.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山抽籤結果查詢</a>
+                            <a id="A7" tabindex="20" title="玉山抽籤日期" href="bed_8.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山抽籤日期查詢</a>
+                            <a id="con_hlBed_9" tabindex="20" title="玉山可申請退費日期查詢" href="bed_9.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山可申請退費日期查詢</a>
+                            <a id="con_HyperLink66" tabindex="20" title="林業及自然保育署區域申請及抽籤查詢" href="bed_11.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;林業及自然保育署區域申請及抽籤查詢</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink19" tabindex="23" title="旅遊登山資訊" href="#">旅遊登山資訊</a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink40" tabindex="35" title="登山路線圖資查詢" href="web_map2.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;登山路線圖資查詢</a>
+                            <a id="con_HyperLink22" tabindex="26" title="登山路線介紹" href="information_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;登山路線介紹</a>
+                            <a id="A4" tabindex="24" title="景點資訊" href="information_place.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;景點資訊</a>
+                            <a id="con_HyperLink20" tabindex="24" title="各縣市天氣預報" href="information_2.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;各縣市天氣預報</a>
+                            <a id="con_HyperLink21" tabindex="25" title="國家公園天氣資訊" href="information_3.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;國家公園天氣資訊</a>
+                            <a id="con_HyperLink23" tabindex="27" title="即時影像觀看" href="information_4.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;即時影像觀看</a>
+                            <a id="A10" tabindex="27" title="國家公園步道分級" href="information_6.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;國家公園步道分級</a>
+                            
+                            <a id="A12" tabindex="28" title="雙語詞彙" href="information_8.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;雙語詞彙</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink399" tabindex="34" title="本站使用說明" href="web_illustrate.aspx">本站使用說明</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink499" tabindex="35" title="警特報" target="_blank" rel="noopener noreferrer" href="https://www.cwa.gov.tw/V8/C/P/Warning/FIFOWS.html">警特報</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink501" tabindex="37" title="網站導覽" href="site_map.aspx">網站導覽</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink500" tabindex="36" title="RSS" target="_blank" rel="noopener noreferrer" href="RssWeb.aspx">RSS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div id="con_UpdatePanel2" class="index_con_box">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-light">
+                   <li class="breadcrumb-item"><a href="web_index.aspx" rel="noopener noreferrer"><i class="fas fa-home"></i></a></li>
+                     <li class="breadcrumb-item"><a href="bed_0.aspx" rel="noopener noreferrer">宿營地與床位查詢</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="bed_6.aspx" rel="noopener noreferrer">玉山宿營地查詢</a></li>
+                </ol>
+            </nav>
+            <h2 class="con_title">玉山宿營地查詢</h2>
+            <div class="container-fluid">
+                <div class="card card_main">
+                    <div class="card-header">宿營地查詢</div>
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            <div class="col-md-6 mb-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">宿營地</span>
+                                    </div>
+                                    <select name="ctl00$con$rooms" id="con_rooms" class="form-control">
+	<option value="">請選擇</option>
+	<option value="3">排雲山莊</option>
+	<option value="4">圓峰山屋/營地</option>
+	<option value="221">荖濃溪營地</option>
+	<option value="222">樂樂山屋</option>
+	<option value="727">觀高山屋</option>
+	<option value="223">巴奈伊克營地</option>
+	<option value="224">中央金礦山屋</option>
+	<option value="225">白洋金礦山屋/營地</option>
+	<option value="226">杜鵑營地</option>
+	<option value="227">南營地</option>
+	<option value="228">大水窟山屋</option>
+	<option value="229">塔芬谷山屋</option>
+	<option value="230">轆轆谷山屋</option>
+	<option value="231">雲峰下三叉營地</option>
+	<option value="232">拉庫音溪山屋</option>
+	<option value="233">馬博山屋</option>
+	<option value="234">馬利加南山屋</option>
+	<option value="235">馬布谷山屋</option>
+	<option value="6">佳心營地</option>
+	<option value="7">瓦拉米山屋/營地</option>
+	<option value="215">抱崖山屋/營地</option>
+	<option selected="selected" value="236">多美麗營地</option>
+	<option value="237">大分山屋</option>
+	<option value="238">托馬斯營地</option>
+	<option value="239">庫哈諾辛山屋/營地</option>
+	<option value="240">連理山前(桃源)營地</option>
+	<option value="241">新仙山前營地</option>
+
+</select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-1">
+                                <a id="con_btnsearch" class="btn btn-main btn-block" href="javascript:__doPostBack('ctl00$con$btnsearch','')">查詢</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                        <div class="accordion card mb-2" id="accordionExample">
+                            <a href="#" class="card-header bg-primary text-white" data-toggle="collapse" data-target="#collapse01" aria-expanded="true" aria-controls="collapse01"><strong>申請狀態說明</strong></a>
+                            <div id="collapse01" class="card-body collapse show" aria-labelledby="heading01" data-parent="#accordionExample">
+                                <ol>
+                                    <li><strong class="text-danger">餘額：</strong>剩餘床位或營位名額。</li>
+                                    <li>
+                                        <strong class="text-danger">排隊預約(含備取)：</strong>等候抽籤或等候遞補。抽籤結果為「備取」隊伍，有優先遞補權。<br>
+                                        一般開放路線等候遞補排隊隊伍如申請資料符合規定，會核發排隊號碼，當日如無餘額需等候空位釋出；未核發排隊號碼隊伍請檢查申請資料是否符合規定。
+                                    </li>
+                                    <li><strong class="text-danger">審核中：</strong>已核發名額，包含「中籤」、「初審完成」、「初審完成，待補件」、「初審完成，待繳費」、「初審完成，待補件及繳費」、及「複審完成」等隊伍。</li>
+                                    <li><strong class="text-danger">核准入園：</strong>已核准入園，請於入園日前5日至入園當日期間，上網列印入園許可證。</li>
+                                    <li><strong class="text-danger">外籍提前：</strong>申請外籍提前人數（外國人+本國人）。於週日至週四（國定假期除外）每日提供24個外籍保留名額住宿「排雲山莊」。</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="block_title">山屋/營地概況</div>
+                        <div class="row mt-2">
+                            <div class="col-md-6 col-xl-3 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text text-warning bg-dark">橘色數字</span>
+                                    </div>
+                                    <div class="input-group-append form-control">
+                                        表示<strong>「床位」</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text text-success">綠色數字</span>
+                                    </div>
+                                    <div class="input-group-append form-control">
+                                        表示<strong>「營帳」</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">非假日床位</span>
+                                    </div>
+                                    <div class="input-group-append form-control">
+                                        <strong><span class="text-warning">
+                                            <span id="con_generalnum" style="color:#FF9933;">0</span></span>人</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">假日床位</span>
+                                    </div>
+                                    <div class="input-group-append form-control">
+                                        <strong><span class="text-warning">
+                                            <span id="con_holidaynum" style="color:#FF9933;">0</span></span>人</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">非假日營帳</span>
+                                    </div>
+                                    <div class="input-group-append form-control">
+                                        <strong><span class="text-success">
+                                            <span id="con_generalnumt" style="color:#009933;">12</span></span>人</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-3 mb-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">假日營帳</span>
+                                    </div>
+                                    <div class="input-group-append form-control">
+                                        <strong><span class="text-success">
+                                            <span id="con_holidaynumt" style="color:#009933;">12</span></span>人</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <div class="alert alert-info text-center">
+                                <span class="pull-left">
+                                    <a id="con_lbUpMonth" class="btn btn-sm btn-light" href="javascript:__doPostBack('ctl00$con$lbUpMonth','')"><i class="fas fa-chevron-left"></i>&nbsp;上個月</a></span>
+                                <span class="pull-right">
+                                    <a id="con_lbDownMonth" class="btn btn-sm btn-light" href="javascript:__doPostBack('ctl00$con$lbDownMonth','')">下個月&nbsp;<i class="fas fa-chevron-right"></i></a></span>
+                                <select name="ctl00$con$ddlYear" onchange="javascript:setTimeout('__doPostBack(\'ctl00$con$ddlYear\',\'\')', 0)" id="con_ddlYear">
+	<option value="2021">2021</option>
+	<option value="2022">2022</option>
+	<option value="2023">2023</option>
+	<option value="2024">2024</option>
+	<option value="2025">2025</option>
+	<option selected="selected" value="2026">2026</option>
+	<option value="2027">2027</option>
+	<option value="2028">2028</option>
+	<option value="2029">2029</option>
+	<option value="2030">2030</option>
+
+</select>年&nbsp;
+                                <select name="ctl00$con$ddlMonth" onchange="javascript:setTimeout('__doPostBack(\'ctl00$con$ddlMonth\',\'\')', 0)" id="con_ddlMonth">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option selected="selected" value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+
+</select>月
+                                <input type="hidden" name="ctl00$con$hidYear" id="con_hidYear" value="2026">
+                                <input type="hidden" name="ctl00$con$hidMonth" id="con_hidMonth" value="10">
+                                <input type="hidden" name="ctl00$con$hidIsad" id="con_hidIsad">
+                            </div>
+                            <table class="table table-bordered text-center table_bed">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th width="14.28%">星期日</th>
+                                        <th width="14.28%">星期一</th>
+                                        <th width="14.28%">星期二</th>
+                                        <th width="14.28%">星期三</th>
+                                        <th width="14.28%">星期四</th>
+                                        <th width="14.28%">星期五</th>
+                                        <th>星期六</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-th="星期日">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td data-th="星期一">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td data-th="星期二">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td data-th="星期三">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td data-th="星期四">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                1
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期五">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                2
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期六">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                3
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-th="星期日">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                4
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期一">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                5
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期二">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                6
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期三">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                7
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期四">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                8
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期五">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                9
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期六">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                10
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-th="星期日">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                11
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期一">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                12
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期二">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                13
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期三">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                14
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期四">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                15
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期五">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                16
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期六">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                17
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-th="星期日">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                18
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期一">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                19
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期二">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                20
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期三">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                21
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期四">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                22
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期五">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                23
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期六">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                24
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-th="星期日">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                25
+                                            </p>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                        <td data-th="星期一">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                26
+                                            </p>
+                                            <p>
+                                                <a href="bed_6main.aspx?orgid=C951CDCD-B75A-46B9-8002-8EF952EC95FD&amp;node_id=236&amp;sdate=2026-10-26" title="查看明細"><span class="text-primary">餘額</span>&nbsp;(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">12</span>)<br>
+														<span class="text-primary">排隊預約</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">審核中</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">核准入園</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">0</span>)</span>
+</a>
+                                            </p>
+                                        </td>
+                                        <td data-th="星期二">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                27
+                                            </p>
+                                            <p>
+                                                <a href="bed_6main.aspx?orgid=C951CDCD-B75A-46B9-8002-8EF952EC95FD&amp;node_id=236&amp;sdate=2026-10-27" title="查看明細"><span class="text-primary">餘額</span>&nbsp;(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">12</span>)<br>
+														<span class="text-primary">排隊預約</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">審核中</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">核准入園</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">0</span>)</span>
+</a>
+                                            </p>
+                                        </td>
+                                        <td data-th="星期三">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                28
+                                            </p>
+                                            <p>
+                                                <a href="bed_6main.aspx?orgid=C951CDCD-B75A-46B9-8002-8EF952EC95FD&amp;node_id=236&amp;sdate=2026-10-28" title="查看明細"><span class="text-primary">餘額</span>&nbsp;(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">12</span>)<br>
+														<span class="text-primary">排隊預約</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">審核中</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">核准入園</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">0</span>)</span>
+</a>
+                                            </p>
+                                        </td>
+                                        <td data-th="星期四">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                29
+                                            </p>
+                                            <p>
+                                                <a href="bed_6main.aspx?orgid=C951CDCD-B75A-46B9-8002-8EF952EC95FD&amp;node_id=236&amp;sdate=2026-10-29" title="查看明細"><span class="text-primary">餘額</span>&nbsp;(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">12</span>)<br>
+														<span class="text-primary">排隊預約</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">審核中</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">核准入園</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">0</span>)</span>
+</a>
+                                            </p>
+                                        </td>
+                                        <td data-th="星期五">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                30
+                                            </p>
+                                            <p>
+                                                <a href="bed_6main.aspx?orgid=C951CDCD-B75A-46B9-8002-8EF952EC95FD&amp;node_id=236&amp;sdate=2026-10-30" title="查看明細"><span class="text-primary">餘額</span>&nbsp;(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">12</span>)<br>
+														<span class="text-primary">排隊預約</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">審核中</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">核准入園</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">0</span>)</span>
+</a>
+                                            </p>
+                                        </td>
+                                        <td data-th="星期六">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                31
+                                            </p>
+                                            <p>
+                                                <a href="bed_6main.aspx?orgid=C951CDCD-B75A-46B9-8002-8EF952EC95FD&amp;node_id=236&amp;sdate=2026-10-31" title="查看明細"><span class="text-primary">餘額</span>&nbsp;(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">12</span>)<br>
+														<span class="text-primary">排隊預約</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">審核中</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">核准入園</span>&nbsp;<span class="text-info">0</span><br>
+														<span class="text-primary">(<span style="color:#FF9933;">0</span>,<span style="color:#009933;">0</span>)</span>
+</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-th="星期日">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td data-th="星期一">
+                                            <p class="text-right bg-light text-primary pr-2">
+                                                &nbsp;
+                                            </p>
+                                            <p>
+                                                &nbsp;
+                                            </p>
+                                        </td>
+                                        <td data-th="星期二">&nbsp;
+                                        </td>
+                                        <td data-th="星期三">&nbsp;
+                                        </td>
+                                        <td data-th="星期四">&nbsp;
+                                        </td>
+                                        <td data-th="星期五">&nbsp;
+                                        </td>
+                                        <td data-th="星期六">&nbsp;
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="con_detail" class="card card_main">
+                            <div class="card-header">
+                                多美麗營地
+                            </div>
+                            <div class="card-body">
+                                <div class="row align-items-center mb-2">
+                                    <div class="col-md-4 text-center mb-1">
+                                        
+                                        
+                                    </div>
+                                    <div class="col-md-8 mb-1">
+                                        <p>
+                                            ◎海拔高度：1810m。<br>◎為十三里警察駐在所舊址，人字石砌遺址優美，動植物資源豐富。<br>◎營地宿營需自備營帳、睡墊及睡袋。<br>◎水源缺乏。<br>◎TWD97經緯：東經121°07’44，北緯23°21’55<br>◎TWD97TM2：X座標263157，Y座標2584676
+                                        </p>
+                                        <p>
+                                            <span id="con_waters">水源 : 無、</span>
+                                        </p>
+                                        <p>
+                                            <span id="con_signals"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+            </div>
+        </div>
+
+        <div class="web_footer  con_web_bg p-3">
+            <div class="container-fluid">
+               <div class="row gutters_s">
+                    <div class="col-md-12 col-xl-2 mb-1">
+                        <span>Copyright © 內政部國家公園署 著作權所有</span>
+                        <span>建議瀏覽解析度：1440 x 960 以上</span>
+                        <span>並符合【Safari 、Edge、Chrome】</span>
+                    </div>
+                    <div class="col-md-2 col-xl-1 mb-1">
+                        <a id="hlNews7" class="btn btn-info btn-block" href="news_7.aspx"><i class="far fa-comments fa-2x w-100"></i>常見問答</a>&nbsp;
+                    </div>
+                   <div class="col-md-2 col-xl-1 mb-1">
+                        <a id="hlMail" class="btn btn-info btn-block" href="mail.aspx"><i class="far fa-envelope fa-2x w-100"></i>聯絡我們</a>&nbsp;
+                    </div>
+                   <div class="col-md-2 col-xl-1 mb-1">
+                        <a id="HyperLink1" class="btn btn-info btn-block" href="privacy.aspx"><i class="fa fa-user-secret fa-2x w-100"></i>隱私權宣告</a>&nbsp;
+                    </div>
+                  <div class="col-md-3 col-xl-1 mb-1">
+                        <a id="HyperLink2" class="btn btn-info btn-block" href="security.aspx"><i class="fas fa-shield-alt fa-2x w-100"></i>資訊安全政策</a>
+                    </div>
+                    <div class="col-md-3 col-xl-1 mb-1">
+                        <a id="HyperLink3" class="btn btn-info btn-block" href="OpenData.aspx"><i class="fas fa-landmark fa-2x w-100"></i>資料開放宣告</a>
+                    </div>
+                   	<div class="col-md-12 col-xl-5 mb-1">
+                        <span>更新日期：2026/10/21</span>
+                        <span>「臺灣登山申請一站式服務網」乃整合國家公園署之玉山、雪霸、太魯閣國家公園登山申請、林業及自然保育署之天池、嘉明湖、向陽、檜谷山屋營地及自然保護(留)區、野生動物保護區、警政署入山申請等服務，本站提供統一申請入口，再由各機關個別審核，如有申請相關問題，歡迎透過<a href="mail.aspx">聯絡我們</a>向指定機關連繫，謝謝。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="f_search" data-toggle="modal" data-target="#search_modal"><i class="fas fa-search"></i><br>快捷選單</a>
+        <a href="#" id="gotop">
+            <i class="fas fa-angle-up text-white"></i><br>Top
+        </a>
+          <div class="modal" id="search_modal" role="dialog" aria-labelledby="search_modal" aria-modal="true">
+  <div class="modal-dialog modal-xxl" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4>依據登山經驗建議參考資料</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<div class="info_list_box">
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t1">學習登山者<br><small>獲取登山知識</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li>登山安全影片
+								<ul>
+									<li><a href="https://www.youtube.com/watch?v=HgnaQaKFjNo" target="_blank" rel="noopener noreferrer">登山安全防護原則</a></li>
+									<li><a href="https://www.youtube.com/watch?v=OrVgsQFbuOs" target="_blank" rel="noopener noreferrer">國家公園步道分級</a></li>
+									<li><a href="https://www.youtube.com/watch?v=syBRav_eZAA" target="_blank" rel="noopener noreferrer">登山必要裝備</a></li>
+									<li><a href="https://www.youtube.com/watch?v=vvkmAks0fD8" target="_blank" rel="noopener noreferrer">登山留守制度</a></li>
+									<li><a href="https://www.youtube.com/watch?v=e4_GSy6vdYI" target="_blank" rel="noopener noreferrer">高山症處理與預防</a></li>
+								</ul>
+							</li>
+							<li><a href="information_place.aspx" target="_blank" rel="noopener noreferrer">路線及景點介紹</a></li>
+							<li><a href="web_illustrate.aspx" target="_blank" rel="noopener noreferrer">如何申請入山/入園許可證</a></li>
+                            <li><a href="MountainDashboard.aspx" rel="noopener noreferrer">山域事故儀表板</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t2">規劃登山者<br><small>查詢登山資料</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="web_map2.aspx" target="_blank" rel="noopener noreferrer">登山路線圖資查詢</a></li>
+							<li><a href="notice.aspx" target="_blank" rel="noopener noreferrer">各機關登山申辦須知</a></li>
+							<li><a href="open.aspx" target="_blank" rel="noopener noreferrer">可申請路線查詢</a></li>
+							<li><a href="bed_7.aspx" target="_blank" rel="noopener noreferrer">單日往返可申請數量</a></li>
+							<li><a href="bed_0.aspx" target="_blank" rel="noopener noreferrer">宿營地及山屋可申請數量</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t3">申請登山者<br><small>申請/修改資料</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="apply_1.aspx" target="_blank" rel="noopener noreferrer">線上申請</a></li>
+							<li><a href="apply_2_1.aspx" target="_blank" rel="noopener noreferrer">草稿編輯</a></li>
+							<li><a href="apply_3.aspx" target="_blank" rel="noopener noreferrer">申請進度查詢</a></li>
+							<li><a href="apply_2.aspx" target="_blank" rel="noopener noreferrer">申請資料異動</a></li>
+							<li><a href="apply_4.aspx" target="_blank" rel="noopener noreferrer">繳費/退費(含退費日期)查詢</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t4">前往學習者<br><small>必要整備</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="open.aspx" target="_blank" rel="noopener noreferrer">路線開放狀態查詢</a></li>
+							<li><a href="information_3.aspx" target="_blank" rel="noopener noreferrer">天候狀況查詢</a></li>
+							<li><a href="https://www.youtube.com/playlist?list=PL8CdSPNjegIZKIN75OXLB9uk_4eQmgsAm" target="_blank" rel="noopener noreferrer">登山教育影片</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t5">完成登山者<br><small>下山回報</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="apply_6.aspx" target="_blank" rel="noopener noreferrer">出園回報</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+$('#con_HyperLink15,#con_hlBed_6').addClass('active');//]]>
+</script>
+<span style="display: none !important;"><input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""></span><span style="display: none !important;"><input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""></span><span style="display: none !important;"><input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value=""></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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tIQ8L3NwYW4+Jm5ic3A7PHNwYW4gY2xhc3M9J3RleHQtaW5mbyc+MDwvc3Bhbj48QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPuWvqeaguOS4rTwvc3Bhbj4mbmJzcDs8c3BhbiBjbGFzcz0ndGV4dC1pbmZvJz4wPC9zcGFuPjxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+5qC45YeG5YWl5ZySPC9zcGFuPiZuYnNwOzxzcGFuIGNsYXNzPSd0ZXh0LWluZm8nPjA8L3NwYW4+PEJSPg0KCQkJCQkJCQkJCQkJCQk8c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz4oPHNwYW4gc3R5bGU9J2NvbG9yOiNGRjk5MzM7Jz4wPC9zcGFuPiw8c3BhbiBzdHlsZT0nY29sb3I6IzAwOTkzMzsnPjA8L3NwYW4+KTwvc3Bhbj4NCjwvYT5kAo8BDxYCHwAFAjI3ZAKRAQ8WAh8ABbAFPGEgaHJlZj0nYmVkXzZtYWluLmFzcHg/b3JnaWQ9Qzk1MUNEQ0QtQjc1QS00NkI5LTgwMDItOEVGOTUyRUM5NUZEJm5vZGVfaWQ9MjM2JnNkYXRlPTIwMjYtMTAtMjcnIHRpdGxlPSfmn6XnnIvmmI7ntLAnPjxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPumkmOmhjTwvc3Bhbj4mbmJzcDsoPHNwYW4gc3R5bGU9J2NvbG9yOiNGRjk5MzM7Jz4wPC9zcGFuPiw8c3BhbiBzdHlsZT0nY29sb3I6IzAwOTkzMzsnPjEyPC9zcGFuPik8QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPuaOkumaiumgkOe0hDwvc3Bhbj4mbmJzcDs8c3BhbiBjbGFzcz0ndGV4dC1pbmZvJz4wPC9zcGFuPjxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+5a+p5qC45LitPC9zcGFuPiZuYnNwOzxzcGFuIGNsYXNzPSd0ZXh0LWluZm8nPjA8L3NwYW4+PEJSPg0KCQkJCQkJCQkJCQkJCQk8c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz7moLjlh4blhaXlnJI8L3NwYW4+Jm5ic3A7PHNwYW4gY2xhc3M9J3RleHQtaW5mbyc+MDwvc3Bhbj48QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPig8c3BhbiBzdHlsZT0nY29sb3I6I0ZGOTkzMzsnPjA8L3NwYW4+LDxzcGFuIHN0eWxlPSdjb2xvcjojMDA5OTMzOyc+MDwvc3Bhbj4pPC9zcGFuPg0KPC9hPmQCkwEPFgIfAAUCMjhkApUBDxYCHwAFsAU8YSBocmVmPSdiZWRfNm1haW4uYXNweD9vcmdpZD1DOTUxQ0RDRC1CNzVBLTQ2QjktODAwMi04RUY5NTJFQzk1RkQmbm9kZV9pZD0yMzYmc2RhdGU9MjAyNi0xMC0yOCcgdGl0bGU9J+afpeeci+aYjue0sCc+PHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+6aSY6aGNPC9zcGFuPiZuYnNwOyg8c3BhbiBzdHlsZT0nY29sb3I6I0ZGOTkzMzsnPjA8L3NwYW4+LDxzcGFuIHN0eWxlPSdjb2xvcjojMDA5OTMzOyc+MTI8L3NwYW4+KTxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+5o6S6ZqK6aCQ57SEPC9zcGFuPiZuYnNwOzxzcGFuIGNsYXNzPSd0ZXh0LWluZm8nPjA8L3NwYW4+PEJSPg0KCQkJCQkJCQkJCQkJCQk8c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz7lr6nmoLjkuK08L3NwYW4+Jm5ic3A7PHNwYW4gY2xhc3M9J3RleHQtaW5mbyc+MDwvc3Bhbj48QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPuaguOWHhuWFpeWckjwvc3Bhbj4mbmJzcDs8c3BhbiBjbGFzcz0ndGV4dC1pbmZvJz4wPC9zcGFuPjxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+KDxzcGFuIHN0eWxlPSdjb2xvcjojRkY5OTMzOyc+MDwvc3Bhbj4sPHNwYW4gc3R5bGU9J2NvbG9yOiMwMDk5MzM7Jz4wPC9zcGFuPik8L3NwYW4+DQo8L2E+ZAKXAQ8WAh8ABQIyOWQCmQEPFgIfAAWwBTxhIGhyZWY9J2JlZF82bWFpbi5hc3B4P29yZ2lkPUM5NTFDRENELUI3NUEtNDZCOS04MDAyLThFRjk1MkVDOTVGRCZub2RlX2lkPTIzNiZzZGF0ZT0yMDI2LTEwLTI5JyB0aXRsZT0n5p+l55yL5piO57SwJz48c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz7ppJjpoY08L3NwYW4+Jm5ic3A7KDxzcGFuIHN0eWxlPSdjb2xvcjojRkY5OTMzOyc+MDwvc3Bhbj4sPHNwYW4gc3R5bGU9J2NvbG9yOiMwMDk5MzM7Jz4xMjwvc3Bhbj4pPEJSPg0KCQkJCQkJCQkJCQkJCQk8c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz7mjpLpmorpoJDntIQ8L3NwYW4+Jm5ic3A7PHNwYW4gY2xhc3M9J3RleHQtaW5mbyc+MDwvc3Bhbj48QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPuWvqeaguOS4rTwvc3Bhbj4mbmJzcDs8c3BhbiBjbGFzcz0ndGV4dC1pbmZvJz4wPC9zcGFuPjxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+5qC45YeG5YWl5ZySPC9zcGFuPiZuYnNwOzxzcGFuIGNsYXNzPSd0ZXh0LWluZm8nPjA8L3NwYW4+PEJSPg0KCQkJCQkJCQkJCQkJCQk8c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz4oPHNwYW4gc3R5bGU9J2NvbG9yOiNGRjk5MzM7Jz4wPC9zcGFuPiw8c3BhbiBzdHlsZT0nY29sb3I6IzAwOTkzMzsnPjA8L3NwYW4+KTwvc3Bhbj4NCjwvYT5kApsBDxYCHwAFAjMwZAKdAQ8WAh8ABbAFPGEgaHJlZj0nYmVkXzZtYWluLmFzcHg/b3JnaWQ9Qzk1MUNEQ0QtQjc1QS00NkI5LTgwMDItOEVGOTUyRUM5NUZEJm5vZGVfaWQ9MjM2JnNkYXRlPTIwMjYtMTAtMzAnIHRpdGxlPSfmn6XnnIvmmI7ntLAnPjxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPumkmOmhjTwvc3Bhbj4mbmJzcDsoPHNwYW4gc3R5bGU9J2NvbG9yOiNGRjk5MzM7Jz4wPC9zcGFuPiw8c3BhbiBzdHlsZT0nY29sb3I6IzAwOTkzMzsnPjEyPC9zcGFuPik8QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPuaOkumaiumgkOe0hDwvc3Bhbj4mbmJzcDs8c3BhbiBjbGFzcz0ndGV4dC1pbmZvJz4wPC9zcGFuPjxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+5a+p5qC45LitPC9zcGFuPiZuYnNwOzxzcGFuIGNsYXNzPSd0ZXh0LWluZm8nPjA8L3NwYW4+PEJSPg0KCQkJCQkJCQkJCQkJCQk8c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz7moLjlh4blhaXlnJI8L3NwYW4+Jm5ic3A7PHNwYW4gY2xhc3M9J3RleHQtaW5mbyc+MDwvc3Bhbj48QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPig8c3BhbiBzdHlsZT0nY29sb3I6I0ZGOTkzMzsnPjA8L3NwYW4+LDxzcGFuIHN0eWxlPSdjb2xvcjojMDA5OTMzOyc+MDwvc3Bhbj4pPC9zcGFuPg0KPC9hPmQCnwEPFgIfAAUCMzFkAqEBDxYCHwAFsAU8YSBocmVmPSdiZWRfNm1haW4uYXNweD9vcmdpZD1DOTUxQ0RDRC1CNzVBLTQ2QjktODAwMi04RUY5NTJFQzk1RkQmbm9kZV9pZD0yMzYmc2RhdGU9MjAyNi0xMC0zMScgdGl0bGU9J+afpeeci+aYjue0sCc+PHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+6aSY6aGNPC9zcGFuPiZuYnNwOyg8c3BhbiBzdHlsZT0nY29sb3I6I0ZGOTkzMzsnPjA8L3NwYW4+LDxzcGFuIHN0eWxlPSdjb2xvcjojMDA5OTMzOyc+MTI8L3NwYW4+KTxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+5o6S6ZqK6aCQ57SEPC9zcGFuPiZuYnNwOzxzcGFuIGNsYXNzPSd0ZXh0LWluZm8nPjA8L3NwYW4+PEJSPg0KCQkJCQkJCQkJCQkJCQk8c3BhbiBjbGFzcz0ndGV4dC1wcmltYXJ5Jz7lr6nmoLjkuK08L3NwYW4+Jm5ic3A7PHNwYW4gY2xhc3M9J3RleHQtaW5mbyc+MDwvc3Bhbj48QlI+DQoJCQkJCQkJCQkJCQkJCTxzcGFuIGNsYXNzPSd0ZXh0LXByaW1hcnknPuaguOWHhuWFpeWckjwvc3Bhbj4mbmJzcDs8c3BhbiBjbGFzcz0ndGV4dC1pbmZvJz4wPC9zcGFuPjxCUj4NCgkJCQkJCQkJCQkJCQkJPHNwYW4gY2xhc3M9J3RleHQtcHJpbWFyeSc+KDxzcGFuIHN0eWxlPSdjb2xvcjojRkY5OTMzOyc+MDwvc3Bhbj4sPHNwYW4gc3R5bGU9J2NvbG9yOiMwMDk5MzM7Jz4wPC9zcGFuPik8L3NwYW4+DQo8L2E+ZAKjAQ8WAh8ABQYmbmJzcDtkAqUBDxYCHwAFBiZuYnNwO2QCpwEPFgIfAAUGJm5ic3A7ZAKpAQ8WAh8ABQYmbmJzcDtkAqsBD2QWCgIBDxYCHwAFD+Wkmue+jum6l+eHn+WcsGQCAw8WAh8AZWQCBQ8WAh8ABbAC4peO5rW35ouU6auY5bqm77yaMTgxMG3jgII8QlI+4peO54K65Y2B5LiJ6YeM6K2m5a+f6aeQ5Zyo5omA6IiK5Z2A77yM5Lq65a2X55+z56CM6YG65Z2A5YSq576O77yM5YuV5qSN54mp6LOH5rqQ6LGQ5a+M44CCPEJSPuKXjueHn+WcsOWuv+eHn+mcgOiHquWCmeeHn+W4s+OAgeedoeWiiuWPiuedoeiii+OAgjxCUj7il47msLTmupDnvLrkuY/jgII8QlI+4peOVFdEOTfntpPnt6/vvJrmnbHntpMxMjHCsDA34oCZNDTvvIzljJfnt68yM8KwMjHigJk1NTxCUj7il45UV0Q5N1RNMu+8mljluqfmqJkyNjMxNTfvvIxZ5bqn5qiZMjU4NDY3NmQCBw8PFgIfAAUP5rC05rqQIDog54Sh44CBZGQCCQ8PFgIfAGVkZBgBBRRjdGwwMCRjb24kTXVsdGlWaWV3MQ8PZAIBZGokm1YbVI/q0ChhVeZFMTgt8Z5k+oZBvrTm7bG+QALO"></span><span style="display: none !important;"><input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3B4F7E30"></span><span style="display: none !important;"><input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAD109E7uA+eWj8bWaGrb9t8uaNJYjUsx+j4smr5S5oVL6l2H4yrOzUKI5RWi1stZtYbSS65nBWqcPMPp/sYWlhJ4V79Y6snRFaYK0syEpTJl3uT+8ZC4Hy2VtV+4NCXmqG3sRYR1ZkINtkVpW8gjkicKriLYS+da2Q3+nzvOGHxD4lrczfOe5v0KUVbGG8VTAndob1YYduXa4EXCEAXJRI7HHKww+HUVifH8pr2NN443mQkbpmb1A+pRdBvV0Y3iach+c1uNnOtb/mueJmlZvbm0rRGQdGq1qRE8IC2ZSePSSjJ3TmiSdnbPDeWRUem7nMOSXq5BTi1AiLKAZ9FBexN+LmuPfJ+oLmgDX2Qgo/pTdEtspwPieZpb3WmOe63F/s09Pmpi3aT+kmqbtovvErAh0DYbQq436fKgNtYjFz5PbyMVCPKs/nzkQfAJKJFe/89H7Nt0gTUH2cf6qCPPxP2p3yz91Na83vrPRWRzzzBmoRDxrWBEn1Igvxptp1Tw/Argwh+exFg6Y/KK5p4Bhe8eitNxmrZkjXU/32OzPMrdohLOYHFgbWlSvNuTQ3cMOkABVXzyttvMQUmj9KalepS0GF2DiJ3ynsFdYqQTaV/1xyZxlsegvBgMf6mknYIOx7X9IIeHh73Xoiykyo+MPd6psrqZcwWhgaWUtR1uTLhuEM0roGM2qTk5b0D0e+x3qOyrPXKquHefAQSmcrJZUYXXu5LMR0MKrSav6AtfkIF9tolQekh6np+TEksXCrWjZhdhWN3yFyJzZ/CX+eyRB/FImgyUvS5AdUkELHkkcKvVEw96mo6ug+uV9XcjLb98SdXUFX6885ilQkiLerfClqS8z8qWDxE5CwAJZJSHF6uBuaQJ1BTv+Ip5io33xa3wst0OQr1YKeyFNSE/zvLaB8cjtPbfQdIGvEDEH2aVogpbGfBoUL4uZQEf1MdvgFzdd2Is/dvzjdVnp1MBo2H12eu6vPLYyvCndwTVy3AZDdlnOIzJs/08bQ6DExuGz7Aonr/LBFC0HzSYczktlgAEJMjwryBAPXsvGQjfJOfyp5l0XYVb8juC9tucldixEnp65O6V0k5Ey3I6vwOkla8mSxoalYttkM3nVAcd0Q9GcmF05tXu6rrDNEQJFmSIjqI3b6eFLV/oztVUn6py2EmGiDB5WJUfoyQ/1+C+k9XMpTrvlvDqEUKwIpArXW5cSApbhfA5hQCspYAhBZxcz/A4S7aeXJvhlFFWyin4eOj1HjOYlGjSHuiBQ8hlbS2tk6caC1QrcMTJLF+saW22QIre2k+9Pp4qrU6UZ2R9d7Owfe44QCC5wka0HawjbKJPsDB4UPI="></span></form>
+    <form id="CardForm" hidden=""></form>
+    <style>
+        /*--語言切換區塊--*/
+        .goog-te-gadget-simple {
+            padding: 0.3em;
+            border: 1px solid #814794;
+            border-radius: 0.2rem;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script src="js/google-googletagmanager.js?id=G-WX36SLM6TL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WX36SLM6TL');
+    </script>
+
+
+
+</body></html>

@@ -1,0 +1,1153 @@
+<!DOCTYPE html><html class=""><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>臺灣登山申請一站式服務網</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="bookmark" href="favicon.ico">
+
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- css Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- css bootstrap datetimepicker -->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+    <!-- css bootstrap multiselect -->
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css">
+
+    <!-- css system style -->
+    <link rel="stylesheet" href="css/web_style.css">
+    <link href="./css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!-- js jQuery -->
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <!-- js Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+
+    <!-- bootstrap datetimepicker -->
+    <script src="js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datetimepicker.zh-TW.js" type="text/javascript"></script>
+
+    <!-- bootstrap multiselect -->
+    <script src="js/bootstrap-multiselect.min.js" type="text/javascript"></script>
+
+    <!-- js system js -->
+    <script src="js/system.js" type="text/javascript"></script>
+    <script src="js/HSTS/shares.js" type="text/javascript"></script>
+
+    <!-- js fancybox js -->
+    <script type="text/javascript" src="js/source/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css?v=2.1.5" media="screen">
+    <script src="js/jquery.blockUI.js"></script>
+    <link type="text/css" href="js/Plugin/sweetalert.css" rel="stylesheet">
+    <script type="text/javascript" src="js/Plugin/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/HSTS/Swal.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-CETW.js"></script>
+    <script src="js/language.js"></script>
+    <link rel="stylesheet" href="js/Plugin/Chosen/chosen.css">
+    <script src="js/Plugin/Chosen/chosen.jquery.min.js"></script>
+
+
+    <script src="js/jimmy.js?i=20261021232759"></script>
+    <script>       
+        function NotWorking() {
+            ShowSwal(-1, "", "功能調整中");
+        }
+    </script>
+    
+    <script type="text/javascript" src="js/source/jquery.fancybox.js?v=2.1.5"></script>
+    <script type="text/javascript" src="js/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css?v=2.1.5" media="screen">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            init();
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+
+            function EndRequestHandler(sender, args) {
+                init();
+            }
+        });
+
+        function init() {
+            $('.fancybox').fancybox({  //鎖定位置不移動最上面
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                }
+            });
+        }
+    </script>
+
+    
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body>
+    <form method="post" action="./bed_6.aspx" id="form1" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=T6Nh5aykfJHQx6c4fqve2vpkJu4h6jkHshXTKbP8hQPUpTjmq_IdV7U3U0RytaWrVeFFW8bvbJpPAUTxOrAG2_kj5NBlN6sd-qTGDmFiP6Y1&amp;t=639191132600000000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=JHtumTjcVH5oeGZqPMmj13wJ-Jlw6SEy2Hiy5HGT4RiBleWIj1W0tWrwlu1qViioWKTuw9k44n35hdiHrufJ2GRZivnVRJX9yoxBwi_r9i77_Bwo9DzAW9WkIJtN0xNilFiT3GvQKVQRwOgp9FeeUA2&amp;t=7f16157c" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 用戶端架構無法載入。');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=pT2Qz_rtrcmcHYrldUtXYAC8Cok_aynqiXYPrmIbdmaDKLVt9d_8ex80PmRWxMvZKbkxuPqYqQsU45awQmw6-UIRoTqQYtThsUZ8ICrm-eiXMgE01FapBLEwE5oRyVTztjYFm6-6oDc4PsK4xYuHpQ2&amp;t=7f16157c" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3B4F7E30">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAFtwn0LWOPYVESXfH5zBwVX2aNIe6IFDyGVtLa2TpxoLVCtwxMksX6xpbbZAit7aT71o0liNSzH6PiyavlLmhUvqXYfjKs7NQojlFaLWy1m1htJLrmcFapw8w+n+xhaWEnhXv1jqydEVpgrSzISlMmXe5P7xkLgfLZW1X7g0JeaobexFhHVmQg22RWlbyCOSJwquIthL51rZDf6fO84YfEPiWtzN857m/QpRVsYbxVMCd2hvVhh25drgRcIQBclEjsccrDD4dRWJ8fymvY03jjeZCRumZvUD6lF0G9XRjeJpyH5zW42c61v+a54maVm9ubStEZB0arWpETwgLZlJ49JKMndOaJJ2ds8N5ZFR6bucw5JerkFOLUCIsoBn0UF7E34ua498n6guaANfZCCj+lN0S2ynA+J5mlvdaY57rcX+zT0+amLdpP6Sapu2i+8SsCHQNhtCrjfp8qA21iMXPk9vIxUI8qz+fORB8AkokV7/z0fs23SBNQfZx/qoI8/E/anfLP3U1rze+s9FZHPPMGahEPGtYESfUiC/Gm2nVPD8CuDCH57EWDpj8ormngGF7x6K03GatmSNdT/fY7M8yt2iEs5gcWBtaVK825NDdww6QAFVfPK228xBSaP0pqV6lLQYXYOInfKewV1ipBNpX/XHJnGWx6C8GAx/qaSdgg7HtRdSaZcn1zRcLfqSS30ZD93TxHPfRdLIK7jLWln1N0GuxNNLC0HFc6XDnB7+8AcwxLF+InsjWzKoqMzY8hHO2lDCELKqCRzyrUnKR8QelYbwcibxhkOF7VeDa3GLLtJVebtu/E/SyD6B4ztTWM6jFgvJOhGhzAM1QM46TVhLjLh8eg30sZEAXj6WixTC+RDulI6LuNTozmWOzavGun6tFUGpAhq4nHmaNfL/n8sAFGFRydb2+x4hpfV27fZ3Er3FQF9C+2jVfujpRB0hmXROIyFPh1rH0XoGhiyd7DOqlaQS6aeFHGNUQDwF9tklQGnhHkcztkuf2j9C5mES7aEmdOuNsg2puB8Aapt3fe4dVZtkbbetRP6pX36dWnSbg/AS++aEypanqGZrF7gJzAffATgpyDyn8R2F5y2pM8UGiIYuqCCBMcLXbGj45JmGEADFRJNc3F6S9Nfz7Z127fwOHIVmcnZOWB4oJzqCOa/nJovh4RExzwPYxihVUueNzhEgM1jVm7V70bdL08lLebjTeNJ5AYVDqz8xRMUAUfX/XUy8f1uVp8+Kese8uc5udZXQ0q4jWHxEgwOylmKWKVTvmJ/M2Hbb/IuzLedO0o9DJp3Qwej+rE3et01Z65kniAeemP8If3LKxVObjDZP+qT5OsSFISUV2jHNxRCDEuestOxN2KxqU7zz9yWafwXJ0R9wQIntXKsTcKb5sBLza9o6W3N72q2HWjxzJ4F+DofF7sMgxzbmWNackC7oIAiN4lrgIndzbvDmJgMAsU9FvtpP494DDwgnflkhX99IL0Sf+KzgPNORuQdZ96n8qYpJ0evlKlTH0DU6UlfW5gfALTD1XvKkVGQce1A8FnyskzfGmVn2UGSYcg72bGmlGDziHrSTWZufzpLFAAlO8UqT/Okh24DiWaPHqGATRS+RGCHesdyHU3/Q5cJadrRi9eRBED3SRoiHuxE0MYeMndPpIQJ4SiSwlPuiBB36oy+u7IP/5AS3gniBvBbAHASXg2wXD3W2Eh5xKFoUMT6LuDAoOZHsq/MRf9vxWtgobiNrn4mpGuemhNR/pinHudKgfFdrEEetrR7Yc/UMYBJMZpzKdmUpqnB1kw7DaXzODHLq3JqQCGCH6/X55I8COSQlRUnaHvu84IQjWU19wjrdXRQl3CJXF+kVn3G4lrlljGucmvBMCP7xCLEucdXPdw0bVYWu778XDLUR28SSResWMyMZm2ycjo4FM7I8biaIe5GQFlaViXlY8yWTlUrwE888X+Y6u/g7dUuJuL2w4RXuyQKtXv60f28=">
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['fctl00$con$UpdatePanel2','con_UpdatePanel2'], ['ctl00$con$btnsearch','con_btnsearch'], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div class="sys_header">
+            <div class="dropdown dropleft pull-right mt-3 mr-1 ml-4">
+                <div class="pull-left mr-2" style="margin-top: -0.2em;">
+                    <div class="input-group input-group-sm" style="z-index: 2;">
+                        <input name="ctl00$googletxt" type="text" id="googletxt" class="form-control" placeholder="全站搜尋">
+                        <div class="input-group-append">
+                            <a id="btngoogle" class="btn btn-secondary" href="javascript:__doPostBack('ctl00$btngoogle','')"><i class="fas fa-search"></i>查詢</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="./en/web_index.aspx" class="text-white-50">【EN】</a>
+                <a href="./jp/web_index.aspx" class="text-white-50">【日本語】</a>
+            </div>
+            <div class="main_menu_box  con_web_bg">
+                <a href="#" id="pull" class="btn btn-sm btn-light"><i class="fas fa-bars"></i></a>
+                <div class="main_menu" style="">
+                    <div class="menu_group sys_logo_btn">
+                        <a class="m_menu_btn sys_logo" title="臺灣登山申請一站式服務網" href="web_index.aspx">臺灣登山申請一站式服務網</a>
+                    </div>                    
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink3" tabindex="7" title="公布欄" href="#">公布欄</a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink4" tabindex="8" title="最新消息" href="news_0.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;最新消息</a>
+                            <a id="con_HyperLink5" tabindex="9" title="違規名單" href="news_5.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;違規名單</a>
+                            <a id="con_HyperLink6" tabindex="10" title="檔案下載" href="news_6.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;檔案下載</a>
+                            <a id="con_HyperLink7" tabindex="11" title="常見問答" href="news_7.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;常見問答</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink24" tabindex="28" title="登山申請" href="#"><b>登山申請</b></a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink25" tabindex="29" title="各項線上申請" href="apply_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;各項線上申請</a>
+                            <a id="con_HyperLinkSearch" tabindex="200" title="申請進度查詢/繳費/異動/取消" href="applySearch.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;申請進度查詢/繳費/異動/取消</a>
+                            
+                            
+                            <a id="A6" tabindex="30" title="草稿編輯" href="apply_2_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;草稿編輯</a>
+                            
+                            
+                            <a id="A8" tabindex="32" title="國家公園出園回報" href="apply_6.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;國家公園出園回報</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink8" tabindex="12" title="登山須知" href="notice.aspx">登山須知</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink14" tabindex="18" title="登山路線開放狀態" href="open.aspx">登山路線開放狀態</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn active" id="con_HyperLink15" tabindex="19" title="宿營地與床位查詢" href="#">宿營地與床位查詢</a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink32" tabindex="20" title="林業及自然保育署宿營地查詢" href="bed_0.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;林業及自然保育署宿營地查詢</a>
+                            <a id="con_HyperLink29" tabindex="20" title="太魯閣山屋查詢" href="bed_4.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;太魯閣山屋查詢</a>
+                            <a id="con_HyperLink30" tabindex="20" title="太魯閣路線查詢" href="bed_5.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;太魯閣路線查詢</a>
+                            <a id="con_HyperLink16" tabindex="20" title="雪霸宿營地查詢" href="bed_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;雪霸宿營地查詢</a>
+                            <a id="con_HyperLink17" tabindex="20" title="雪霸路線查詢" href="bed_10.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;雪霸路線查詢</a>
+                            <a id="con_hlBed_6" tabindex="20" title="玉山宿營地查詢" href="bed_6.aspx" class="active"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山宿營地查詢</a>
+                            <a id="A5" tabindex="20" title="玉山單日往返路線查詢" href="bed_7.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山單日往返路線查詢</a>
+                            <a id="con_hlBed_3" tabindex="22" title="玉山抽籤結果查詢" href="bed_3.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山抽籤結果查詢</a>
+                            <a id="A7" tabindex="20" title="玉山抽籤日期" href="bed_8.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山抽籤日期查詢</a>
+                            <a id="con_hlBed_9" tabindex="20" title="玉山可申請退費日期查詢" href="bed_9.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;玉山可申請退費日期查詢</a>
+                            <a id="con_HyperLink66" tabindex="20" title="林業及自然保育署區域申請及抽籤查詢" href="bed_11.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;林業及自然保育署區域申請及抽籤查詢</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink19" tabindex="23" title="旅遊登山資訊" href="#">旅遊登山資訊</a>
+                        <span class="menu_list">
+                            <a id="con_HyperLink40" tabindex="35" title="登山路線圖資查詢" href="web_map2.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;登山路線圖資查詢</a>
+                            <a id="con_HyperLink22" tabindex="26" title="登山路線介紹" href="information_1.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;登山路線介紹</a>
+                            <a id="A4" tabindex="24" title="景點資訊" href="information_place.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;景點資訊</a>
+                            <a id="con_HyperLink20" tabindex="24" title="各縣市天氣預報" href="information_2.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;各縣市天氣預報</a>
+                            <a id="con_HyperLink21" tabindex="25" title="國家公園天氣資訊" href="information_3.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;國家公園天氣資訊</a>
+                            <a id="con_HyperLink23" tabindex="27" title="即時影像觀看" href="information_4.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;即時影像觀看</a>
+                            <a id="A10" tabindex="27" title="國家公園步道分級" href="information_6.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;國家公園步道分級</a>
+                            
+                            <a id="A12" tabindex="28" title="雙語詞彙" href="information_8.aspx"><i class="fas fa-caret-right fa-xs"></i>&nbsp;雙語詞彙</a>
+                            <a href="#" class="close_up btn btn-sm btn-block btn-light"><i class="fas fa-chevron-up"></i></a>
+                        </span>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink399" tabindex="34" title="本站使用說明" href="web_illustrate.aspx">本站使用說明</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink499" tabindex="35" title="警特報" target="_blank" rel="noopener noreferrer" href="https://www.cwa.gov.tw/V8/C/P/Warning/FIFOWS.html">警特報</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink501" tabindex="37" title="網站導覽" href="site_map.aspx">網站導覽</a>
+                    </div>
+                    <div class="menu_group">
+                        <a class="m_menu_btn" id="con_HyperLink500" tabindex="36" title="RSS" target="_blank" rel="noopener noreferrer" href="RssWeb.aspx">RSS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div id="con_UpdatePanel2" class="index_con_box">
+	
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-light">
+                   <li class="breadcrumb-item"><a href="web_index.aspx" rel="noopener noreferrer"><i class="fas fa-home"></i></a></li>
+                     <li class="breadcrumb-item"><a href="bed_0.aspx" rel="noopener noreferrer">宿營地與床位查詢</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="bed_6.aspx" rel="noopener noreferrer">玉山宿營地查詢</a></li>
+                </ol>
+            </nav>
+            <h2 class="con_title">玉山宿營地查詢</h2>
+            <div class="container-fluid">
+                <div class="card card_main">
+                    <div class="card-header">宿營地查詢</div>
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            <div class="col-md-6 mb-1">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">宿營地</span>
+                                    </div>
+                                    <select name="ctl00$con$rooms" id="con_rooms" class="form-control">
+		<option selected="selected" value="">請選擇</option>
+		<option value="3">排雲山莊</option>
+		<option value="4">圓峰山屋/營地</option>
+		<option value="221">荖濃溪營地</option>
+		<option value="222">樂樂山屋</option>
+		<option value="727">觀高山屋</option>
+		<option value="223">巴奈伊克營地</option>
+		<option value="224">中央金礦山屋</option>
+		<option value="225">白洋金礦山屋/營地</option>
+		<option value="226">杜鵑營地</option>
+		<option value="227">南營地</option>
+		<option value="228">大水窟山屋</option>
+		<option value="229">塔芬谷山屋</option>
+		<option value="230">轆轆谷山屋</option>
+		<option value="231">雲峰下三叉營地</option>
+		<option value="232">拉庫音溪山屋</option>
+		<option value="233">馬博山屋</option>
+		<option value="234">馬利加南山屋</option>
+		<option value="235">馬布谷山屋</option>
+		<option value="6">佳心營地</option>
+		<option value="7">瓦拉米山屋/營地</option>
+		<option value="215">抱崖山屋/營地</option>
+		<option value="236">多美麗營地</option>
+		<option value="237">大分山屋</option>
+		<option value="238">托馬斯營地</option>
+		<option value="239">庫哈諾辛山屋/營地</option>
+		<option value="240">連理山前(桃源)營地</option>
+		<option value="241">新仙山前營地</option>
+
+	</select>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-1">
+                                <a id="con_btnsearch" class="btn btn-main btn-block" href="javascript:__doPostBack('ctl00$con$btnsearch','')">查詢</a>
+                            </div>
+                        </div>
+                        <div id="con_pCampBedDiv" class="alert alert-info">
+		
+                            <ul>
+                                <li>點選宿營地名稱時，可查詢各宿營地排隊狀況。</li>
+                                <li>各宿營地考量腹地大小、水源、設施及環境影響等因素訂定遊客承載量。</li>
+                                <li>宿營地內請以簡易器具炊煮，禁止隨地野炊、烤肉、燃火等行為。</li>
+                                <li>
+                                    <a id="con_HyperLink2" rel="noopener noreferrer" href="news_7_1.aspx?id=1546" target="_blank">玉山園區宿營地一覽表</a></li>
+                            </ul>
+                        
+	</div>
+                    </div>
+                </div>
+                
+                        <div class="block_title">宿營地清單</div>
+                        <div class="table-responsive">
+                            
+                                    <table class="table table-bordered table-striped text-center table_bed">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th rowspan="2">宿營地
+                                                </th>
+                                                <th colspan="2">平日承載量(人)
+                                                </th>
+                                                <th colspan="2">假日承載量(人)
+                                                </th>
+                                                <th rowspan="2">備註
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>山屋床位
+                                                </th>
+                                                <th>營地營位
+                                                </th>
+                                                <th>山屋床位
+                                                </th>
+                                                <th>營地營位
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_0" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl01$name','')">排雲山莊</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl01$HiddenField1" id="con_Repeater_List_HiddenField1_0" value="3">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            136
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            136
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_1" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl02$name','')">圓峰山屋/營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl02$HiddenField1" id="con_Repeater_List_HiddenField1_1" value="4">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            15
+                                        </td>
+                                        <td style="width: 10%;">
+                                            9
+                                        </td>
+                                        <td style="width: 10%;">
+                                            15
+                                        </td>
+                                        <td style="width: 10%;">
+                                            9
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <a id="con_Repeater_List_lbDisplay_1" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl02$lbDisplay','')">※登玉山群峰高級登山路線宿營點...more</a>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_2" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl03$name','')">荖濃溪營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl03$HiddenField1" id="con_Repeater_List_HiddenField1_2" value="221">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_3" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl04$name','')">樂樂山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl04$HiddenField1" id="con_Repeater_List_HiddenField1_3" value="222">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_4" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl05$name','')">觀高山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl05$HiddenField1" id="con_Repeater_List_HiddenField1_4" value="727">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            42
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            42
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_5" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl06$name','')">巴奈伊克營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl06$HiddenField1" id="con_Repeater_List_HiddenField1_5" value="223">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_6" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl07$name','')">中央金礦山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl07$HiddenField1" id="con_Repeater_List_HiddenField1_6" value="224">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_7" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl08$name','')">白洋金礦山屋/營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl08$HiddenField1" id="con_Repeater_List_HiddenField1_7" value="225">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="width: 10%;">
+                                            8
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="width: 10%;">
+                                            8
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_8" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl09$name','')">杜鵑營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl09$HiddenField1" id="con_Repeater_List_HiddenField1_8" value="226">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <a id="con_Repeater_List_lbDisplay_8" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl09$lbDisplay','')">杜鵑營地、南營地及該路段暫不開...more</a>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_9" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl10$name','')">南營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl10$HiddenField1" id="con_Repeater_List_HiddenField1_9" value="227">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <a id="con_Repeater_List_lbDisplay_9" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl10$lbDisplay','')">杜鵑營地、南營地及該路段暫不開...more</a>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_10" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl11$name','')">大水窟山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl11$HiddenField1" id="con_Repeater_List_HiddenField1_10" value="228">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_11" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl12$name','')">塔芬谷山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl12$HiddenField1" id="con_Repeater_List_HiddenField1_11" value="229">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_12" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl13$name','')">轆轆谷山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl13$HiddenField1" id="con_Repeater_List_HiddenField1_12" value="230">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_13" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl14$name','')">雲峰下三叉營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl14$HiddenField1" id="con_Repeater_List_HiddenField1_13" value="231">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_14" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl15$name','')">拉庫音溪山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl15$HiddenField1" id="con_Repeater_List_HiddenField1_14" value="232">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_15" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl16$name','')">馬博山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl16$HiddenField1" id="con_Repeater_List_HiddenField1_15" value="233">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_16" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl17$name','')">馬利加南山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl17$HiddenField1" id="con_Repeater_List_HiddenField1_16" value="234">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_17" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl18$name','')">馬布谷山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl18$HiddenField1" id="con_Repeater_List_HiddenField1_17" value="235">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_18" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl19$name','')">佳心營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl19$HiddenField1" id="con_Repeater_List_HiddenField1_18" value="6">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <a id="con_Repeater_List_lbDisplay_18" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl19$lbDisplay','')">※屬特別景觀區，非生態保護區內...more</a>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_19" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl20$name','')">瓦拉米山屋/營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl20$HiddenField1" id="con_Repeater_List_HiddenField1_19" value="7">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_20" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl21$name','')">抱崖山屋/營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl21$HiddenField1" id="con_Repeater_List_HiddenField1_20" value="215">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            16
+                                        </td>
+                                        <td style="width: 10%;">
+                                            4
+                                        </td>
+                                        <td style="width: 10%;">
+                                            16
+                                        </td>
+                                        <td style="width: 10%;">
+                                            4
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_21" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl22$name','')">多美麗營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl22$HiddenField1" id="con_Repeater_List_HiddenField1_21" value="236">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_22" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl23$name','')">大分山屋</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl23$HiddenField1" id="con_Repeater_List_HiddenField1_22" value="237">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_23" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl24$name','')">托馬斯營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl24$HiddenField1" id="con_Repeater_List_HiddenField1_23" value="238">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            20
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_24" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl25$name','')">庫哈諾辛山屋/營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl25$HiddenField1" id="con_Repeater_List_HiddenField1_24" value="239">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            12
+                                        </td>
+                                        <td style="text-align: left;">
+                                            <a id="con_Repeater_List_lbDisplay_24" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl25$lbDisplay','')">※南橫公路台20臨105線0K...more</a>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_25" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl26$name','')">連理山前(桃源)營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl26$HiddenField1" id="con_Repeater_List_HiddenField1_25" value="240">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td style="width: 20%;">
+                                            
+                                            <a id="con_Repeater_List_name_26" href="javascript:__doPostBack('ctl00$con$Repeater_List$ctl27$name','')">新仙山前營地</a>
+                                            <input type="hidden" name="ctl00$con$Repeater_List$ctl27$HiddenField1" id="con_Repeater_List_HiddenField1_26" value="241">
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="width: 10%;">
+                                            0
+                                        </td>
+                                        <td style="width: 10%;">
+                                            24
+                                        </td>
+                                        <td style="text-align: left;">
+                                            
+                                            
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    </tbody></table>
+                                
+                        </div>
+                    
+            </div>
+        
+</div>
+
+        <div class="web_footer  con_web_bg p-3">
+            <div class="container-fluid">
+               <div class="row gutters_s">
+                    <div class="col-md-12 col-xl-2 mb-1">
+                        <span>Copyright © 內政部國家公園署 著作權所有</span>
+                        <span>建議瀏覽解析度：1440 x 960 以上</span>
+                        <span>並符合【Safari 、Edge、Chrome】</span>
+                    </div>
+                    <div class="col-md-2 col-xl-1 mb-1">
+                        <a id="hlNews7" class="btn btn-info btn-block" href="news_7.aspx"><i class="far fa-comments fa-2x w-100"></i>常見問答</a>&nbsp;
+                    </div>
+                   <div class="col-md-2 col-xl-1 mb-1">
+                        <a id="hlMail" class="btn btn-info btn-block" href="mail.aspx"><i class="far fa-envelope fa-2x w-100"></i>聯絡我們</a>&nbsp;
+                    </div>
+                   <div class="col-md-2 col-xl-1 mb-1">
+                        <a id="HyperLink1" class="btn btn-info btn-block" href="privacy.aspx"><i class="fa fa-user-secret fa-2x w-100"></i>隱私權宣告</a>&nbsp;
+                    </div>
+                  <div class="col-md-3 col-xl-1 mb-1">
+                        <a id="HyperLink2" class="btn btn-info btn-block" href="security.aspx"><i class="fas fa-shield-alt fa-2x w-100"></i>資訊安全政策</a>
+                    </div>
+                    <div class="col-md-3 col-xl-1 mb-1">
+                        <a id="HyperLink3" class="btn btn-info btn-block" href="OpenData.aspx"><i class="fas fa-landmark fa-2x w-100"></i>資料開放宣告</a>
+                    </div>
+                   	<div class="col-md-12 col-xl-5 mb-1">
+                        <span>更新日期：2026/10/21</span>
+                        <span>「臺灣登山申請一站式服務網」乃整合國家公園署之玉山、雪霸、太魯閣國家公園登山申請、林業及自然保育署之天池、嘉明湖、向陽、檜谷山屋營地及自然保護(留)區、野生動物保護區、警政署入山申請等服務，本站提供統一申請入口，再由各機關個別審核，如有申請相關問題，歡迎透過<a href="mail.aspx">聯絡我們</a>向指定機關連繫，謝謝。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="f_search" data-toggle="modal" data-target="#search_modal"><i class="fas fa-search"></i><br>快捷選單</a>
+        <a href="#" id="gotop">
+            <i class="fas fa-angle-up text-white"></i><br>Top
+        </a>
+          <div class="modal" id="search_modal" role="dialog" aria-labelledby="search_modal" aria-modal="true">
+  <div class="modal-dialog modal-xxl" role="document">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4>依據登山經驗建議參考資料</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">×</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<div class="info_list_box">
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t1">學習登山者<br><small>獲取登山知識</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li>登山安全影片
+								<ul>
+									<li><a href="https://www.youtube.com/watch?v=HgnaQaKFjNo" target="_blank" rel="noopener noreferrer">登山安全防護原則</a></li>
+									<li><a href="https://www.youtube.com/watch?v=OrVgsQFbuOs" target="_blank" rel="noopener noreferrer">國家公園步道分級</a></li>
+									<li><a href="https://www.youtube.com/watch?v=syBRav_eZAA" target="_blank" rel="noopener noreferrer">登山必要裝備</a></li>
+									<li><a href="https://www.youtube.com/watch?v=vvkmAks0fD8" target="_blank" rel="noopener noreferrer">登山留守制度</a></li>
+									<li><a href="https://www.youtube.com/watch?v=e4_GSy6vdYI" target="_blank" rel="noopener noreferrer">高山症處理與預防</a></li>
+								</ul>
+							</li>
+							<li><a href="information_place.aspx" target="_blank" rel="noopener noreferrer">路線及景點介紹</a></li>
+							<li><a href="web_illustrate.aspx" target="_blank" rel="noopener noreferrer">如何申請入山/入園許可證</a></li>
+                            <li><a href="MountainDashboard.aspx" rel="noopener noreferrer">山域事故儀表板</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t2">規劃登山者<br><small>查詢登山資料</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="web_map2.aspx" target="_blank" rel="noopener noreferrer">登山路線圖資查詢</a></li>
+							<li><a href="notice.aspx" target="_blank" rel="noopener noreferrer">各機關登山申辦須知</a></li>
+							<li><a href="open.aspx" target="_blank" rel="noopener noreferrer">可申請路線查詢</a></li>
+							<li><a href="bed_7.aspx" target="_blank" rel="noopener noreferrer">單日往返可申請數量</a></li>
+							<li><a href="bed_0.aspx" target="_blank" rel="noopener noreferrer">宿營地及山屋可申請數量</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t3">申請登山者<br><small>申請/修改資料</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="apply_1.aspx" target="_blank" rel="noopener noreferrer">線上申請</a></li>
+							<li><a href="apply_2_1.aspx" target="_blank" rel="noopener noreferrer">草稿編輯</a></li>
+							<li><a href="apply_3.aspx" target="_blank" rel="noopener noreferrer">申請進度查詢</a></li>
+							<li><a href="apply_2.aspx" target="_blank" rel="noopener noreferrer">申請資料異動</a></li>
+							<li><a href="apply_4.aspx" target="_blank" rel="noopener noreferrer">繳費/退費(含退費日期)查詢</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t4">前往學習者<br><small>必要整備</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="open.aspx" target="_blank" rel="noopener noreferrer">路線開放狀態查詢</a></li>
+							<li><a href="information_3.aspx" target="_blank" rel="noopener noreferrer">天候狀況查詢</a></li>
+							<li><a href="https://www.youtube.com/playlist?list=PL8CdSPNjegIZKIN75OXLB9uk_4eQmgsAm" target="_blank" rel="noopener noreferrer">登山教育影片</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="info_list_block">
+					<div class="info_list_t info_list_t5">完成登山者<br><small>下山回報</small></div>
+					<div class="info_list_c">
+						<ul>
+							<li><a href="apply_6.aspx" target="_blank" rel="noopener noreferrer">出園回報</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+$('#con_HyperLink15,#con_hlBed_6').addClass('active');//]]>
+</script>
+</form>
+    <form id="CardForm" hidden=""></form>
+    <style>
+        /*--語言切換區塊--*/
+        .goog-te-gadget-simple {
+            padding: 0.3em;
+            border: 1px solid #814794;
+            border-radius: 0.2rem;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script src="js/google-googletagmanager.js?id=G-WX36SLM6TL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WX36SLM6TL');
+    </script>
+
+
+
+</body></html>
