@@ -1,5 +1,6 @@
 # 每小時抓一次玉山宿營地床位，結果推到 data 分支（只留最新一份，不累積歷史）。
 # PEAKSTW 官網讀 https://raw.githubusercontent.com/tigerbojo/peakstw-cabin-data/data/yushan.json
+# （2026-10-22：建 repo 後排程三次都沒自己跑，改這行註解重新觸發 GitHub 登記排程）
 name: 抓床位
 
 on:
